@@ -37,7 +37,7 @@
 > **Note:** High-quality animations ahead. Wait a moment for them to load.
 
 <div align="center">
-    <img src="./assets/showcase.mp4" width="100%" alt="Showcase Video" />
+    <video src="./assets/showcase.mp4" width="100%" autoplay loop muted playsinline></video>
 </div>
 
 <details>
@@ -80,7 +80,7 @@
 Run the following command to clone and install the dotfiles automatically:
 
 ```bash
-git clone [https://github.com/YOUR_USERNAME/YOUR_REPO.git](https://github.com/aiwwu/.dotsfile.git)
+git clone [https://github.com/aiwwu/.dotsfile.git](https://github.com/aiwwu/.dotsfile.git)
 cd YOUR_REPO
 chmod +x install.sh
 ./install.sh
