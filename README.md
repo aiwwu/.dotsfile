@@ -3,10 +3,10 @@
 <img src="./assets/banner.png" width="100%" alt="Hyprland Dotfiles Banner" />
 
 <p align="center">
-    <a href="https://github.com/YOUR_USERNAME/YOUR_REPO/stargazers">
+    <a href="https://github.com/aiwwu/.dotsfile/stargazers">
         <img src="https://img.shields.io/github/stars/aiwwu/.dotsfile?style=for-the-badge&logo=star&color=ffcb6b" alt="Stars">
     </a>
-    <a href="https://github.com/YOUR_USERNAME/YOUR_REPO/network/members">
+    <a href="https://github.com/aiwwu/.dotsfile/network/members">
         <img src="https://img.shields.io/github/forks/aiwwu/.dotsfile?style=for-the-badge&logo=git&color=82aaff" alt="Forks">
     </a>
     <a href="https://archlinux.org/">
@@ -37,15 +37,15 @@
 > **Note:** High-quality animations ahead. Wait a moment for them to load.
 
 <div align="center">
-    <img src="./assets/showcase.mp4" width="100%" alt="Showcase GIF" />
+    <img src="./assets/showcase.mp4" width="100%" alt="Showcase Video" />
 </div>
 
 <details>
 <summary><b>📸 Click to see static screenshots</b></summary>
 
-| Clean Desktop | Busy Desktop |
+| File | App |
 | :---: | :---: |
-| <img src="./assets/clean.png" width="100%" alt="Clean"> | <img src="./assets/busy.png" width="100%" alt="Busy"> |
+| <img src="./assets/file.png" width="100%" alt="File"> | <img src="./assets/app.png" width="100%" alt="App"> |
 
 | App Launcher (Rofi) | Lock Screen |
 | :---: | :---: |
