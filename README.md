@@ -80,7 +80,7 @@
 Run the following command to clone and install the dotfiles automatically:
 
 ```bash
-git clone [https://github.com/aiwwu/.dotsfile.git](https://github.com/aiwwu/.dotsfile.git)
+git clone https://github.com/aiwwu/.dotsfile.git
 cd .dotsfile
 chmod +x install.sh
 ./install.sh
