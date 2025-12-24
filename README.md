@@ -36,6 +36,10 @@
 
 > **Note:** High-quality animations ahead. Wait a moment for them to load.
 
+
+https://github.com/user-attachments/assets/3540c97c-c6cd-4f3f-9e08-28d8cdd6d07b
+
+
 <div align="center">
     <video src="./assets/showcase.mp4" width="100%" autoplay loop muted playsinline></video>
 </div>
