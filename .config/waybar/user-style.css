@@ -1,0 +1,161 @@
+* {
+    font-family: "SF Pro";
+    font-size: 12.5px;
+}
+
+window#waybar {
+  background-color: rgba(242, 243, 244, 0.35);
+  /*background-color: rgba(27, 27, 27, 0.45);*/
+}
+
+#custom-app-menu,
+#window,
+#custom-files,
+#custom-browser,
+#custom-chats,
+#custom-terminal,
+#custom-clipboard,
+#custom-configuration,
+#custom-media,
+#battery,
+#tray,
+#custom-chatgpt,
+#custom-all-apps,
+#custom-recording,
+#custom-do-not-disturb,
+#clock {
+  /*color: #f2f3f4;*/
+  color: #1b1b1b;
+  padding: 2px 0px 2px 0px;
+  font-weight: 500;
+}
+
+#custom-app-menu {
+  font-size: 16px;
+  margin-left: 14px;
+  padding: 1px 0px 3px 0px;
+  color: rgba(34, 39, 46,0.8);
+}
+
+#window {
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+#custom-files {
+  margin-left: 18px;
+}
+
+#custom-browser {
+  margin-left: 18px;
+}
+
+#custom-chats {
+  margin-left: 18px;
+}
+
+#custom-terminal {
+  margin-left: 18px;
+}
+
+#custom-clipboard {
+  margin-left: 18px;
+}
+
+#custom-configuration {
+  margin-left: 18px;
+}
+
+#custom-media {
+  font-size: 11px;
+  margin-right: 27px;
+}
+
+#battery {
+  font-size: 10px;
+  margin-right: 10px;
+}
+
+#battery.charging {
+  font-size: 10px;
+}
+
+#battery.critical {
+  font-size: 10px;
+}
+
+#custom-all-apps {
+  font-size: 13px;
+  margin-left: 17px;
+}
+
+#custom-recording {
+  font-size: 12px;
+  margin-right: 15px;
+}
+
+#custom-do-not-disturb {
+  margin-left: 17px;
+  /*padding: 3px 0px 1px 0px;*/
+}
+
+#clock {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: rgba(34, 39, 46,0.9);
+  font-size: 11px;
+}
+#tray {
+  padding: 0px 7px; /* top-bottom nhỏ để cân */
+  background-color: rgba(21, 23, 32, 0.2);
+  border-radius: 100px;
+  margin: 3px 4px;  /* đẩy cách nhẹ với các module bên cạnh */
+  
+}
+#custom-line {
+  color: #22272E;
+  font-size: 12px;/* hoặc black */
+}
+#bluetooth {
+  color: rgba(34, 39, 46,1);
+  font-size: 12px;/* hoặc black */
+}
+#battery {
+  color: rgba(34, 39, 46,0.65);
+  font-size: 12px;/* hoặc black */
+}
+
+#backlight {
+  color: rgba(34, 39, 46 ,0.65);
+  
+  font-size: 13px;/* hoặc black */
+}
+#custom-power {
+  font-size: 15px;
+  margin-left: 14px;
+  padding: 1px 0px 3px 0px;
+  color: rgba(34, 39, 46,0.7);
+}
+#pulseaudio {
+  color: rgba(34, 39, 46,0.65);
+  font-size: 13px;/* hoặc black */
+
+}
+
+#custom-media {
+    padding: 0px 10px;
+    font-size: 12px;
+    margin-left: 11px;
+    color: #22272E;
+}
+
+#custom-swaync {
+    border-radius: 12px; /* hoặc 50% nếu muốn hình tròn hoàn toàn */
+    background-color: transparent;
+    padding: 0px;
+    margin: 0px;
+    font-size: 11px;
+    color: #22272E;
+}
+
+

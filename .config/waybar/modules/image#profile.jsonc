@@ -1,0 +1,10 @@
+{
+   "image#media": {
+    "path": "/tmp/waybar_thumbnail.png",
+    "size": 24,
+    "interval": 1,
+    "on-click": "playerctl play-pause",
+    "tooltip": false
+}
+
+}

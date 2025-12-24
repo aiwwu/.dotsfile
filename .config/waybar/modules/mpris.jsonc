@@ -1,0 +1,19 @@
+{
+  "mpris": {
+  "format": "{player_icon} {dynamic}",
+  "format-paused": " <i>{dynamic}</i>",
+  "format-stopped": "", // ẩn nếu không phát
+  "player-icons": {
+    "default": "",      // Font Awesome ▶
+    "mpv": "🎵"
+  },
+  "status-icons": {
+    "paused": ""        // Font Awesome || Pause
+  },
+  "max-length": 50,
+  "interval": 1,
+  "tooltip": false,
+  "on-click": "playerctl play-pause"
+  }
+
+}

@@ -1,0 +1,108 @@
+{
+    // sourced from header module //
+    "layer": "top",
+    "output": [
+        "*"
+    ],
+    "position": "top",
+    "mod": "dock",
+    "height": 10,
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    "reload_style_on_change": true,
+    "include": [
+        "$XDG_CONFIG_HOME/waybar/modules/*json*", 
+        "$XDG_CONFIG_HOME/waybar/includes/includes.json" 
+    ],
+    
+    "modules-left": [ "custom/app-menu", "hyprland/window", "custom/files", "custom/browser",  "custom/terminal", "custom/configuration" ],
+    "modules-center": [],
+    "modules-right": [ "custom/media",  "clock" , "bluetooth","battery" ],
+    
+    "custom/app-menu": {
+      "format": " ",
+      "on-click": "/home/khoi/.local/lib/hyde/rofilaunch.sh",
+      "tooltip": false
+    },
+
+    "hyprland/window": {
+      "format": "{initialTitle} ",  
+      "rewrite": {
+        "": " Home  ",
+        "kitty": "Terminal",
+      },
+      "tooltip": false
+    },
+
+    "custom/files": {
+      "format": "Files",
+      "on-click": "dolphin",
+      "tooltip": false
+    },
+    
+    "custom/browser": {
+      "format": "Browser",
+      "on-click": "zen-browser",
+      "tooltip": false
+    },
+
+
+    "custom/terminal": {
+      "format": "Terminal",
+      "on-click": "kitty",
+      "tooltip": false
+    },
+
+
+
+    "custom/configuration": {
+      "format": "Configuration",
+      "on-click": "kitty bash -i -c 'cmatrix'",
+      "tooltip": false
+    },
+    "bluetooth": {
+    "format": "",
+    "rotate": 0,
+    "format-disabled": "",
+    "format-connected": " {num_connections}",
+    "format-connected-battery": "{icon} {num_connections}",
+    // "format-connected-battery": "{icon} {device_alias}-{device_battery_percentage}%",
+    "format-icons": ["󰥇", "󰤾", "󰤿", "󰥀", "󰥁", "󰥂", "󰥃", "󰥄", "󰥅", "󰥆", "󰥈"],
+    // "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device If this config option is not defined or none of the devices in the list are connected, it will fall back to showing the last connected device.
+    "tooltip-format": "{controller_alias}\n{num_connections} connected",
+    "tooltip-format-connected": "{controller_alias}\n{num_connections} connected\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}",
+    "tooltip-format-enumerate-connected-battery": "{device_alias}\t{icon} {device_battery_percentage}%"
+    },
+
+    "custom/media": {
+    "format": "{}",
+    "escape": true,
+    "return-type": "json",
+    "max-length": 40,
+    "exec": "$HOME/.config/Scripts/mediaplayer.py",
+    "on-click": "playerctl play-pause",
+    "interval": 1,
+    "tooltip": false
+    },
+
+
+    "tray": {
+      "icon-size": 13,
+      "spacing": 4,
+      "tooltip": false,
+    },
+    
+
+    "clock": {
+    "interval": 60,
+    "format": "{:%a %b %d %I:%M %p}",
+    "tooltip": false
+    },
+
+    "battery": {
+    "interval": 1,
+    }
+
+}

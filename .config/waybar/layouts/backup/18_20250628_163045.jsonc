@@ -1,0 +1,121 @@
+{
+  "layer": "top",
+  "output": ["*"],
+  "position": "top",
+  "mod": "dock",
+  "height": 10,
+  "exclusive": false,
+  "passthrough": false,
+  "gtk-layer-shell": true,
+  "reload_style_on_change": true,
+  "include": [
+    "$XDG_CONFIG_HOME/waybar/modules/*json*",
+    "$XDG_CONFIG_HOME/waybar/includes/includes.json"
+  ],
+  "modules-left": [
+    "custom/app-menu",
+    "hyprland/window",
+    "custom/files",
+    "custom/browser",
+    
+    "custom/terminal",
+    "custom/configuration"
+  ],
+  "modules-center": [],
+  "modules-right": [
+    "image#media",
+    "custom/media",
+    "custom/line",
+    "clock",
+    "pulseaudio",
+    "bluetooth",
+    "battery",
+    "custom/swaync",
+    "custom/power"
+  ],
+
+  "custom/app-menu": {
+    "format": " ",
+    "on-click": "/home/khoi/.local/lib/hyde/rofilaunch.sh",
+    "tooltip": false
+  },
+
+  "hyprland/window": {
+    "format": "{initialTitle} ",
+    "rewrite": {
+      "": " Home  ",
+      "kitty": "Terminal"
+    },
+    "tooltip": false
+  },
+
+  "custom/files": {
+    "format": "Files",
+    "on-click": "dolphin",
+    "tooltip": false
+  },
+
+  "custom/browser": {
+    "format": "Browser",
+    "on-click": "zen-browser",
+    "tooltip": false
+  },
+
+  "custom/terminal": {
+    "format": "Terminal",
+    "on-click": "kitty",
+    "tooltip": false
+  },
+
+  "custom/line": {
+    "format": "",
+    "on-click": "hyprctl dispatch killactive",
+    "tooltip": false
+  },
+
+  "custom/configuration": {
+    "format": "Workspace",
+    "on-click": "hyprctl dispatch workspace +1",
+    "tooltip": false
+  },
+
+  "pulseaudio": {
+    "tooltip": false,
+    "interval": 1
+  },
+
+  "custom/media": {
+    "format": "{}",
+    "escape": true,
+    "return-type": "json",
+    "max-length": 50,
+    "exec": "$HOME/.config/Scripts/mediaplayer.py",
+    "on-click": "playerctl play-pause",
+    "interval": 1,
+    "tooltip": false
+  },
+
+  "clock": {
+    "interval": 60,
+    "format": "{:%a %b %d %I:%M %p}",
+    "tooltip": false
+  },
+
+  "battery": {
+    "tooltip": false
+  },
+
+  "custom/power": {
+    "tooltip": false
+  },
+
+  "bluetooth": {
+    "interval": 5,
+    "on-click": "blueman-manager",
+    "tooltip": false
+  },
+
+  "image#media": {
+  }
+  
+}

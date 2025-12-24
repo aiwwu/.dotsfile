@@ -1,0 +1,12 @@
+{
+    "tray": {
+        "spacing": 8,
+        "icon-size": 24,
+        "icons": {
+         "tooltip":false,
+         "blueman": "/home/khoi/Pictures/icon/3.PNG",
+         "Fcitx": "/home/khoi/Pictures/icon/2.PNG"
+         
+        }
+    }
+}

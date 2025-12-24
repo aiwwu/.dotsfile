@@ -1,0 +1,23 @@
+{
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format-charging": "\udb85\udc0b{capacity}󱉸",
+    "format-plugged": "󱐋",
+    "format": "{icon}{capacity}󱉸",
+    "format-alt": "{time} {icon}",
+    "rotate": 0,
+    "interval": 1,
+    "on-click": "flatpak run io.missioncenter.MissionCenter",
+    "tooltip": true,
+    "format-icons": [
+      "󰁻",  // 0–19%
+      "󰁽",  // 20–39%
+      "󰁿",  // 40–59%
+      "󰂁",  // 60–79%
+      "󰁹"   // 80–100%
+    ]
+  }
+}
